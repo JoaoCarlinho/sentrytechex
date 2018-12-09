@@ -10,7 +10,8 @@ export class AppComponent {
   errorStatus = '';
 
   ThrowError() {
-    document.getElementById('nonExistent').innerHTML = 'going to create an error';
+    console.log('creating error');
     this.errorStatus = ' Good job creating an error';
+    document.getElementById('nonExistent').innerHTML = 'going to create an error';
   }
 }
